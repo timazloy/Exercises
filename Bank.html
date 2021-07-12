@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+<script type="text/javascript"> 
+
+	var summ = prompt("Введите сумму вклада в рублях: ");
+	var percent = prompt("Введите процент по вкладу: ");
+
+	summ = parseInt(summ);
+	percent = parseInt(percent);
+	
+
+
+	var onePercent = (summ / 100);             // один процент в рублях
+	var oneYear = (percent * onePercent);     // процент за год
+	var summOne = (summ + oneYear);          // сумма за год
+	var summTwo = ((summOne / 100) * percent) + summOne;
+	var summThree = ((summTwo / 100) * percent) + summTwo;
+	var summFor = ((summThree / 100) * percent) + summThree;
+	var summFive = ((summFor / 100) * percent) + summFor;
+	
+
+
+
+	alert("Сумма вклада: " + summ + " рублей" + "\nПроцент вклада: " + percent + " процентов" + "\nЕжегодные выплаты: \nВаша выплата по вкладу на конец года: " + oneYear.toFixed(2) + " рублей" + "\nВаши суммарные выплаты по вкладу за 2 года: " + (oneYear * 2).toFixed(2) + " рублей" + "\nВаши суммарные выплаты по вкладу за 3 года: " + (oneYear * 3).toFixed(2) + " рублей" + "\nВаши суммарные выплаты по вкладу за 4 года: " + (oneYear * 4).toFixed(2) + " рублей" + "\nВаши суммарные выплаты по вкладу за 5 лет: " + (oneYear * 5).toFixed(2) + " рублей" + "\n\nПри реинвестиции процентов: " + "\nСумма вклада через год: " + summOne.toFixed(2) + " рублей" + "\nСумма вклада через 2 года: " + summTwo.toFixed(2) + " рублей" + "\nСумма вклада через 3 года: " + summThree.toFixed(2) + " рублей" + "\nСумма вклада через 4 года: " + summFor.toFixed(2) + " рублей" + "\nСумма вклада через 5 лет: " + summFive.toFixed(2) + " рублей");
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+

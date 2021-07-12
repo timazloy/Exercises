@@ -1,0 +1,71 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+    
+  var rightElka = ["Елка", "елка", "Ель", "ель"];
+
+  var answerLamp = ["Лампа", "лампа", "Лампочка", "лампочка"];
+
+  var answerNettle = ["Крапива", "крапива"];
+
+  var answerCar = ["Машина", "машина", "Машины", "машины"];
+
+ 
+    
+
+
+    function zagagka(rightAnswer, userAnswer){
+
+    for(var i = 0; i < rightAnswer.length; i++){
+
+    if(userAnswer == rightAnswer[i]){
+      alert("Поздравляю, вы угадали!");
+      quest++;
+      return;
+       }
+ }
+      alert("Ответ неверный!");
+  
+ 
+}
+
+     
+
+     var Elka = prompt("Загадка 1: Зимой и летом одним цветом, что это?");
+     var quest = 0;  
+
+     zagagka(rightElka, Elka);
+
+
+     var Lamp = prompt("Загадка 2: Висит груша, нельзя скушать, что это?");
+
+
+     zagagka(answerLamp, Lamp);
+
+
+    var nettle = prompt("Загадка 3: Ах, не трогайте меня: Обожгу и без огня! Что это?");
+
+    zagagka(answerNettle, nettle);
+
+    
+    var car = prompt("Загадка 4: Маленькие домики по улице бегут, мальчиков и девочек домики везут. Что это?");
+
+      
+    zagagka(answerCar, car);
+  
+
+
+    alert("Поздравляю, вы отгадали "+ quest+ " загадок!" + "\nСпасибо за старания!");
+
+       
+        
+    
+
+
+        
+</script>
+
+
+
+
+
+
